@@ -1,0 +1,56 @@
+@import url("elements/zeroing.css");
+@import url("elements/nav.css");
+@import url("elements/h.css");
+@import url("elements/btn.css");
+@import url("elements/item.css");
+@import url("elements/collection.css");
+
+@import url("elements/footer.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+img {
+  display: block;
+}
+
+.fixed {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.header {
+  padding-top: 30px;
+}
+
+.related-items {
+  display: flex;
+  padding-bottom: 150px;
+}
+
+@media screen and (max-width: 992px) {
+  .related-items {
+    flex-wrap: wrap;
+    padding-bottom: 45px;
+  }
+}

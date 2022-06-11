@@ -1,0 +1,206 @@
+.nav {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 45px;
+}
+
+.nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav .logo .img-logo {
+  width: 18px;
+  height: auto;
+  display: block;
+}
+
+.nav .logo .logo-name {
+  text-transform: uppercase;
+  padding-left: 15px;
+
+  font-weight: 500;
+}
+
+.nav .nav-ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav .nav-ul li {
+  margin-right: 45px;
+}
+
+.nav .nav-ul li.bucket{
+  margin-right: 0;
+}
+
+.nav .nav-ul li.active {
+  font-weight: 700;
+  color: #6e9c9f;
+}
+
+.nav .callback {
+  display: flex;
+  list-style: none;
+
+  transition: all 0.3s ease;
+}
+
+.call-items {
+  display: flex;
+}
+
+.nav .callback .call {
+  margin-right: 15px;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+  padding: 1.5px;
+  fill: #6e9c9f;
+
+  transition: all 0.5s ease;
+}
+
+.nav .callback .call:hover,
+.nav .callback .call:hover svg {
+  fill: #fff;
+  background-color: #6e9c9f;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.nav .callback .call-number {
+  margin-right: 60px;
+}
+
+.nav-ul.active {
+  display: block;
+  background-color: #fff;
+  transition: all 0.5s ease;
+}
+
+.menu {
+  display: flex;
+}
+
+.burger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+
+  overflow: hidden;
+  display: none;
+}
+
+.burger span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  background-color: #000;
+
+  top: 50%;
+  left: 50%;
+}
+
+.burger span:nth-child(2) {
+  top: calc(50% + 8px);
+}
+.burger span:nth-child(3) {
+  top: calc(50% - 8px);
+}
+
+.burger.active span:nth-child(1) {
+  transform: translateX(100%);
+}
+
+.burger.active span:nth-child(2) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.burger.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media screen and (max-width: 992px) {
+  .nav .callback .call-number {
+    margin-right: 30px;
+  }
+
+  .nav .nav-ul li {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .burger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+
+  .burger.active {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  .burger span {
+    left: 0;
+  }
+  .burger.active span {
+    left: 50%;
+  }
+
+  .nav.active {
+    position: fixed;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+    z-index: 1000;
+
+  }
+
+  .nav.active .nav-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav .nav-ul {
+    display: none;
+  }
+
+  .nav .logo {
+    margin-bottom: 15px;
+  }
+
+  .nav .nav-ul li {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .nav.active .callback {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

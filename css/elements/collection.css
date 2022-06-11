@@ -1,0 +1,130 @@
+.section-collection{
+    padding-top: 145px; 
+    padding-bottom: 130px;
+}
+
+.collection-title{
+    padding-bottom: 90px;
+}
+
+.collection-items{
+    display: flex;
+    padding-bottom: 65px;
+}
+
+.collection-items .colllection-item{
+    text-align: center;
+}
+
+.collection-item{
+    width: 33%;
+    position: relative;
+    margin-right: 30px;
+}
+.collection-item:last-child{
+    margin-right: 0;
+}
+
+.collection-img{
+    position: relative;
+}
+
+.collection-img .img{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.collection-img .img-right{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; 
+
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.collection-img::after{
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #6E9C9FA3;
+    z-index: 1;
+    opacity: 0;
+
+    transition: all .3s ease-in-out;
+}
+
+.collection-img:hover::after,
+.collection-img:hover .img-right{
+    opacity: 1;
+}
+
+
+.collection-name, .collection-price{
+    text-align: center;
+}
+
+.collection-name{
+    padding-top: 25px;
+    padding-bottom: 7px;
+}
+
+.collection-price{
+    color: #9C9C9C; 
+
+}
+
+.collection-price span{
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.collection-btn{
+    display: block;
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    .section-collection{
+        padding-top: 45px;
+        padding-bottom: 60px;
+    }
+    .collection-items{
+        flex-wrap: wrap;
+    }
+    .collection-item{
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .collection-item{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 585px) {
+
+    .collection-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-right: 0;
+    }
+    .collection-img{
+        width: 70%;
+    }
+    
+}

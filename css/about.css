@@ -1,0 +1,150 @@
+/* Import */
+@import url("elements/zeroing.css");
+@import url("elements/nav.css");
+@import url("elements/h.css");
+@import url("elements/btn.css");
+
+@import url("elements/footer.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+img {
+  display: block;
+}
+
+.fixed {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.header {
+  padding-top: 30px;
+}
+
+.section-about{
+    padding-bottom: 150px;
+}
+
+
+.about-heading{
+    padding-top: 90px;
+    padding-bottom: 150px;
+}
+
+.about-heading .about-title{
+    padding-bottom: 25px;
+}
+
+.about-heading .about-nesting{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.about-nesting span:last-child{
+    color: #909090;
+}
+
+.about-items{
+    padding-bottom: 90px;
+}
+
+.about-items .about-item{
+    display: flex;
+    gap: 100px;
+
+    margin-bottom: 45px;    
+}
+
+.about-items .about-item:nth-child(2){
+    flex-direction: row-reverse;
+    margin-bottom: 0;
+}
+
+.about-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-info .item-title{
+    padding-bottom: 45px;
+}
+
+.about-info .item-text{
+    font-weight: 500;
+    font-size: 17px;
+
+}
+
+.about-btn{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .section-about{
+        padding-bottom: 45px;   
+    }
+    .about-heading{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .about-items{
+        padding-bottom: 45px;
+    }
+
+    .about-items .about-item{
+        gap: 50px;
+    }
+
+    .about-item .about-img img{
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .about-items .about-item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-items .about-item:nth-child(2){
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-info{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-item .about-img img{
+        width: 100%;
+    }
+    .about-info{
+        width: 100%;
+    }
+}

@@ -1,0 +1,82 @@
+.btn {
+  display: inline-block;
+
+  background-color: #6e9c9f;
+  color: #fff;
+  padding: 22px 50px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-main:hover {
+  background-color: #509498;
+}
+
+.btn-bottom {
+  background-color: #6e9c9f1a;
+  padding-top: 19px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #6e9c9f;
+  border: 1px solid #6e9c9f;
+  font-size: 17px;
+}
+
+.btn-secondary:hover {
+  background-color: #6e9c9f;
+  color: #fff;
+}
+
+.btn-shop {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000000;
+  padding: 19px 65px;
+
+  font-weight: 500;
+  font-size: 17px;
+
+}
+
+.btn-shop.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-collection {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000000;
+  padding: 9px 16px;
+
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.btn-collection.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-shop:hover,
+.btn-collection:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-number{
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #AFAFAF;
+  padding: 20px 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    padding: 15px 25px;
+  }
+}

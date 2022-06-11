@@ -1,0 +1,149 @@
+
+
+section .shop-item{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    gap: 100px;
+}
+
+.shop-info{
+    padding-top: 60px;
+}
+
+.shop-info .shop-item-title{
+    padding-bottom: 25px;
+}
+
+.shop-info .shop-item-nesting{
+    font-weight: 500;
+    font-size: 17px;
+    color: #000;
+}
+
+.shop-info .shop-item-nesting span:last-child{
+    color: #909090;
+}
+
+.shop-item-img .img-item{
+    width: 450px;
+    height: auto;
+}
+
+.shop-item-info{
+    padding-top: 80px;
+}
+
+.shop-item-price{
+    padding-bottom: 60px;
+    color: #998E78;
+
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.shop-item-price span{
+    color: #9C9C9C;
+    text-decoration: line-through;
+    font-size: 30px;
+}
+
+.size-items{
+    padding-top: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.size-btn{
+    text-align: center;
+}
+
+.shop-color-item{
+    padding-top: 65px;
+    padding-bottom: 55px;
+}
+
+.color-items{
+    padding-top: 35px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.color-items .color-item{
+    cursor: pointer;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+}
+
+.color-item.color-brown{
+    background-color: #927876;
+}
+.color-item.color-gray{
+    background-color: #D4D4D4;
+}
+.color-item.color-ml{
+    background-color: #FD9696;
+}
+.color-item.color-yellow{
+    background-color: #FDC796;
+}
+
+.color-item.active{
+    border: 1px solid #000;
+}
+
+
+.shop-btns{
+    display: flex;
+    gap: 10px;
+}
+
+.shop-btns .btn{
+    text-align: center;
+}
+
+.related-title{
+    padding-bottom: 65px;
+}
+
+@media screen and (max-width: 992px) {
+    section .shop-item{
+        padding-top: 40px;
+        gap: 40px;
+    }
+    .shop-item-img .img-item {
+        width: 370px;
+    }
+    .shop-item-info {
+        padding-top: 30px;
+    }
+    .shop-item-price{
+        padding-bottom: 30px;
+    }
+    .shop-color-item{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    section .shop-item{
+        flex-direction: column;
+    }
+
+    .shop-item-img .img-item {
+        width: 100%;
+    }
+
+    .shop-item-info {
+        padding-top: 0px;
+    }
+
+    .size-items{
+        flex-wrap: wrap;
+    }
+}

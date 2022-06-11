@@ -1,0 +1,265 @@
+/* Import */
+@import url("elements/zeroing.css");
+@import url("elements/nav.css");
+@import url("elements/h.css");
+@import url("elements/btn.css");
+
+@import url("elements/footer.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+img {
+  display: block;
+}
+
+.fixed {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.header {
+  padding-top: 30px;
+}
+
+.section-bucket {
+  padding-bottom: 150px;
+}
+
+.bucket-heading {
+  padding-top: 90px;
+  padding-bottom: 150px;
+}
+
+.bucket-heading .bucket-title {
+  padding-bottom: 25px;
+}
+
+.bucket-heading .bucket-nesting {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.bucket-nesting span:last-child {
+  color: #909090;
+}
+
+.bucket-item-header,
+.bucket-item {
+  display: flex;
+  align-items: center;
+
+  padding-bottom: 26px;
+}
+
+.bucket-item-header {
+  border-bottom: 1px solid #cccccc;
+}
+
+.bucket-item-header .name,
+.bucket-item .item-name {
+  width: 40%;
+}
+
+.bucket-item {
+  font-weight: 500;
+  font-size: 17px;
+  padding-bottom: 75px;
+}
+
+.bucket-item .item-name .item-close {
+  padding-right: 30px;
+}
+
+.bucket-item .item-name .item-img {
+  padding-right: 30px;
+}
+
+.bucket-item .item-name .item-close .close {
+  width: 12px;
+  height: 12px;
+}
+
+.bucket-item .item-name {
+  display: flex;
+  align-items: center;
+}
+
+.bucket-item-header .price,
+.bucket-item-header .number,
+.bucket-item-header .all-price,
+.bucket-item .item-price,
+.bucket-item .item-number,
+.bucket-item .item-all-price {
+  width: 20%;
+}
+
+.bucket-item {
+  padding-top: 26px;
+}
+
+.bucket-item .item-img {
+  display: flex;
+  align-items: center;
+}
+
+.bucket-item .item-img img {
+  margin-right: 15px;
+  width: 100px;
+}
+
+.bucket-item .item-number input {
+  width: 35px;
+  padding: 7px 10px;
+  text-align: center;
+
+  border: 1px solid #afafaf;
+}
+
+.bucket-item .item-number input:focus {
+  outline: none;
+}
+
+.bucket-item .item-number input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.from-sale {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 85px;
+}
+
+.from-sale .from-sell {
+  display: flex;
+}
+
+.from-sale .from-sell input {
+  margin-right: 30px;
+  padding-bottom: 25px;
+
+  font-weight: 500;
+  font-size: 17px;
+
+  border-bottom: 1px solid #000000;
+}
+
+.from-sale .from-sell input:focus {
+  outline: none;
+}
+
+.check {
+  display: flex;
+  justify-content: end;
+}
+
+.check .end-price p {
+  padding-bottom: 25px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.check .end-price .check-btn {
+  display: flex;
+}
+
+.check .end-price h3 {
+  padding: 16px 30px 0;
+  margin-right: 15px;
+  background-color: #f1eadc;
+}
+
+.check .end-price h3 span {
+  margin-left: 69px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .section-bucket{
+    padding-bottom: 45px;
+  }
+
+  .bucket-heading{
+    padding-top: 0;
+    padding-bottom: 45px;
+  }
+
+  .bucket-item .item-name .item-img {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .bucket-item .item-img img {
+    margin-bottom: 15px;
+  }
+
+  .bucket-item-header .name,
+  .bucket-item .item-name {
+    width: 30%;
+  }
+
+  .bucket-item-header .price,
+  .bucket-item-header .number,
+  .bucket-item-header .all-price,
+  .bucket-item .item-price,
+  .bucket-item .item-number,
+  .bucket-item .item-all-price {
+    width: 25%;
+  }
+
+  .check .end-price h3{
+    padding: 8px 15px 0;
+  }
+
+  .check .end-price h3 span{
+    margin-left: 15px;
+  }
+
+  .from-sale{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .from-sale .from-sell{
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bucket-item-header .price,
+  .bucket-item .item-price{
+    width: 15%;
+  }
+
+  .bucket-item-header .number,
+  .bucket-item .item-number{
+    width: 30%;
+  }
+
+  .bucket-item .item-name .item-close{
+    padding-right: 15px;
+  }
+}

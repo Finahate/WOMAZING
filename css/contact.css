@@ -1,0 +1,162 @@
+@import url("elements/zeroing.css");
+@import url("elements/nav.css");
+@import url("elements/h.css");
+@import url("elements/btn.css");
+@import url("elements/item.css");
+@import url("elements/collection.css");
+
+@import url("elements/footer.css");
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+img {
+  display: block;
+}
+
+.fixed {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.header{
+    padding-top: 30px;
+}
+
+section.section-contact{
+    padding-bottom: 160px;
+}
+
+
+.contact-heading{
+    padding-top: 90px;
+    padding-bottom: 150px;
+}
+
+.contact-heading .contact-nesting{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.contact-nesting span:last-child{
+    color: #909090;
+}
+
+.contact-maps{
+    background-color: rgb(168, 168, 168);
+    width: 100%;
+    height: 476px;
+    margin-bottom: 130px;
+}
+
+.contact-info{
+    display: flex;
+    gap: 100px;
+    padding-bottom: 150px;
+}
+
+.contact-info p{
+    font-weight: 500;
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+
+    width: 35%;
+}
+
+.contact-form input{
+    width: 90%;
+    padding: 5px 0;
+    border-bottom: 1px solid #000;
+    margin-bottom: 35px;
+}
+
+.contact-form input:focus{
+    outline: none;
+}
+
+.contact-form textarea{
+    font-family: inherit;
+    border: none;
+    border-bottom:1px solid #000 ;
+    margin-bottom: 35px;
+
+    resize: none;
+}
+
+.contact-form textarea:focus{
+    outline: none;
+}
+
+.contact-form button{
+    width: 190px;
+}
+
+@media screen and (max-width: 992px){
+    section.section-contact{
+        padding-bottom: 60px;
+    }
+    
+    
+    .contact-heading{
+        padding-top: 30px;
+        padding-bottom: 45px;
+    }
+    .contact-maps{
+        margin-bottom: 50px;
+    }
+
+    .contact-info{
+        gap: 30px;
+        padding-bottom: 30px;
+    }
+    
+
+}
+
+@media screen and (max-width: 768px) {
+    .contact-info{
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 30px;
+    }
+    .contact-form{
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form{
+        width: 100%;
+    }
+
+    .contact-form input{
+        width: 100%;
+    }
+}

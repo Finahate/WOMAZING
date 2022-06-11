@@ -1,0 +1,126 @@
+.footer{
+    background-color: #F1EADC;
+    padding: 120px 0;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer-brand .logo{
+    display: flex;
+    align-items: center;
+    padding-bottom: 45px;
+}
+
+.footer-brand .logo .img-logo{
+    width: 18px;
+    height: auto;
+    display: block;
+}
+
+.footer-brand .logo .logo-name{
+    text-transform: uppercase;
+    padding-left: 15px;
+
+    font-weight: 500;
+}
+
+.footer-brand .copypast{
+    font-size: 13px;
+}
+
+.footer-brand .copypast p{
+    padding-bottom: 6px;
+}
+
+.footer-brand .copypast p:last-child{
+    padding-bottom: 0;
+}
+
+.footer-nav .footer-ul{
+    display: flex;
+}
+
+.footer-nav .footer-ul .nav-li{
+    margin-right: 45px;
+
+    transition: all .5s ease-in-out;
+}
+
+.footer-nav .footer-ul .active{
+    font-weight: 700;
+    color: #6E9C9F;
+}
+
+.footer-nav a{
+    position: relative;
+}
+
+.footer-nav a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    left: 0;
+    bottom: 0px;
+
+    opacity: 0;
+}
+
+.footer-nav a:hover::after{
+    opacity: 1;
+
+    transition: all .5s ease-in-out;
+}
+
+.footer-nav .footer-ul .nav-li:last-child{
+    margin-right: 45px;
+}
+
+.footer-nav .shop{
+    padding-top: 45px;
+}
+
+.footer-nav .shop li{
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+
+.footer-info .call{
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: end;
+
+    padding-top: 30px;
+}
+
+.social-icon .social{
+    margin-right: 15px;
+}
+
+.social-icon .social:last-child{
+    margin-right: 0;
+}
+
+.footer-info .card{
+    display: flex;
+    justify-content: end;
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-nav{
+        display: none;
+    }
+}

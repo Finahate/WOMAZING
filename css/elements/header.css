@@ -1,0 +1,182 @@
+header {
+  padding-top: 45px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 55%,
+    rgba(241, 234, 220, 1) 55%
+  );
+}
+
+.header-inner {
+  display: flex;
+}
+
+
+.header-content {
+  padding-top: 145px;
+  margin-right: 100px;
+}
+
+.header-title {
+  padding-bottom: 45px;
+}
+
+.header-subtitle {
+  width: 385px;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+.header-btn {
+  display: flex;
+  padding-bottom: 125px;
+}
+
+.header-btn a {
+  display: block;
+  text-align: center;
+}
+
+.header-btn img {
+  width: 13px;
+  height: auto;
+  display: block;
+}
+
+.header-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  padding-bottom: 55px;
+}
+
+.header-img .secondary-img {
+  display: block;
+  width: 197px;
+  height: auto;
+}
+
+.header-img .secondary-img2 {
+  position: absolute;
+  top: 110px;
+  right: -25%;
+}
+
+.header-img .secondary-img1 {
+  position: absolute;
+  bottom: 0;
+  left: -30%;
+}
+
+@media screen and (max-width: 1275px) {
+  .header-img .main-img {
+    width: 350px;
+  }
+  .header-img .secondary-img2 {
+    width: 120px;
+    right: -7%;
+  }
+
+  .header-img .secondary-img1 {
+    width: 120px;
+    left: -20%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  header{
+    padding-top: 0px;
+  }
+
+  .swiper-header{
+    width: 50%;
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-content {
+    margin-right: 0;
+    padding-top: 45px;
+  }
+
+  .header-img{
+    width: 40%;
+    padding-top: 45px;
+  }
+
+  .header-img .main-img {
+    width: 300px;
+  }
+  .header-img .secondary-img2 {
+    width: 150px;
+    right: -5%;
+  }
+
+  .header-img .secondary-img1 {
+    width: 150px;
+    left: -20%;
+  }
+
+  .header-btn{
+    width: 75%;
+    padding-bottom: 45px;
+  }
+  
+}
+
+
+@media screen and (max-width: 768px){
+  
+  .header-title{
+    padding-bottom: 15px;
+  }
+
+  .header-subtitle{
+    width: 100%;
+  }
+
+  .header-img{
+    width: 40%;
+    padding-top: 45px;
+  }
+
+  .header-img .main-img {
+    width: 100%;
+  }
+  .header-img .secondary-img2 {
+    width: 90px;
+    right: -5%;
+  }
+
+  .header-img .secondary-img1 {
+    width: 90px;
+    left: -10%;
+  }
+
+  .header-btn{
+    width: 75%;
+    padding-bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .header-img{
+   display: none;
+  }
+
+  .swiper-header{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .swiper-header{
+    width: 100%;
+  }
+}
